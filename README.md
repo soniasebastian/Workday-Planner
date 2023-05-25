@@ -7,7 +7,8 @@ Usage
 Credits
 
 Installation
-No installation required is required. User can just access the below mentioned URL.
+No installation required is required. User can just access the below mentioned URL. Link to the deployed application.
+ https://soniasebastian.github.io/Workday-Planner/
 
 Usage
 End users can access the website from the above link and following can be observed.
