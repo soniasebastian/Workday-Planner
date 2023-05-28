@@ -44,9 +44,8 @@ function buildCalender(time, timePeriod, divClass) {
   for (var i = 9; i <= 17; i++) {
     var timePeriod = "AM";
     var currentHour = dayjs().hour();
-    var time = i;
-  
-    if(currentHour < i){
+    var time = i;  
+    if(currentHour > i){
       divClass = ('past')
     }else if (currentHour == i){
       divClass = ('present')
@@ -65,7 +64,6 @@ function buildCalender(time, timePeriod, divClass) {
   function saveInputSubmit(event) {
     event.preventDefault();
     console.log($(this))
-    alert($(this).prev().val());
     var valueToSave = $(this).prev().val()
     var keyToSave = $(this).parent().attr("id")
     console.log(keyToSave)
@@ -75,8 +73,6 @@ function buildCalender(time, timePeriod, divClass) {
   //adding current dateto the header
   $(function () {
     var today = dayjs();
-    alert(today.hour());
-  
     $('#currentDay').text(today.format('MMM D, YYYY'));
   });
   
